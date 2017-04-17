@@ -17,3 +17,5 @@ C:\Program Files (x86)\Adobe\Adobe Illustrator CS6\Presets\ru_RU\Сценари�
 ![Bootstrap Grid System](http://projectsoft-studionions.github.io/Adobe-Illustrator-Bootstrap-Grid-System/images/image_01.png)
 ### Результат работы скрипта
 ![My Site Template](http://projectsoft-studionions.github.io/Adobe-Illustrator-Bootstrap-Grid-System/images/image_02.png)
+
+'@ProjectSoft-STUDIONIONS'
