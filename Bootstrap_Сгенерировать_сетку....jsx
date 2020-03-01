@@ -14,85 +14,84 @@ cols = 12,
 offset = 15,
 wDoc = 1200,
 hDoc = 768,
-resDlg = "" +
-"dialog { " +
-"	alignChildren: 'fill', " +
-"	bstd : Group { " +
-"		orientation: 'row', alignChildren: 'fill', " +
-"		info: Panel { " +
-"			orientation: 'column', " +
-"			borderStyle: 'sunken', " +
-"			text: 'Bootstrap Grid System', " +
-"			alignChildren: 'fill', " +
-"			mg: Group { " +
-"				orientation: 'row', " +
-"				alignment: 'left', " +
-"				s: StaticText { " +
-"					text: 'Выбор ширины шаблона' " +
-"				}, " +
-"				m: DropDownList { " +
-"					alignment: 'left', " +
-"					preferredSize: [180, 20] " +
-"				} " +
-"			}, " +
-"			um: Panel { " +
-"				orientation: 'row', " +
-"				alignChildren: 'right', " +
-"				borderStyle: 'sunken', " +
-"				text: 'Кастомизация', " +
-"				po: Group { " +
-"					orientation: 'column', " +
-"					alignment: 'top', " +
-"					alignChildren: 'left', " +
-"					s: StaticText { " +
-"						text: 'Количество колонок', " +
-"					}, " +
-"					c: EditText { " +
-"						name: 'cols', " +
-"						text: '"+cols+"', " +
-"						preferredSize: [50, 20], " +
-"					}, " +
-"					s: StaticText { " +
-"						text: 'Отступы блоков', " +
-"					}, " +
-"					o: EditText { " +
-"						name: 'offset', " +
-"						text: '"+offset+"', " +
-"						preferredSize: [50, 20], " +
-"					}, " +
-"				}, " +
-"				pp: Group { " +
-"					orientation: 'column', " +
-"					alignment: 'top', " +
-"					alignChildren: 'left', " +
-"					s: StaticText { " +
-"						text: 'Ширина шаблона', " +
-"					}, " +
-"					w: EditText { " +
-"						name: 'width', " +
-"						text: '"+wDoc+"', " +
-"						preferredSize: [50, 20], " +
-"					} " +
-"				} " +
-"			}, " +
-"			btn: Group { " +
-"				orientation: 'row', " +
-"				alignment: 'right', " +
-"				ok: Button { " +
-"					text: 'Ok', " +
-"					properties: { " +
-"						name: 'ok' " +
-"					} " +
-"				}, " +
-"				cancel: Button { " +
-"					text: 'Cancel', " +
-"					properties: { " +
-"						name: 'cancel' " +
-"					} " +
-"				} " +
-"			} " +
-"		} " +
-"	} " +
+resDlg = "dialog {" +
+"	alignChildren: 'fill'," +
+"	bstd : Group {" +
+"		orientation: 'row', alignChildren: 'fill'," +
+"		info: Panel {" +
+"			orientation: 'column'," +
+"			borderStyle: 'sunken'," +
+"			text: 'Bootstrap Grid System'," +
+"			alignChildren: 'fill'," +
+"			mg: Group {" +
+"				orientation: 'row'," +
+"				alignment: 'left'," +
+"				s: StaticText {" +
+"					text: 'Выбор ширины шаблона'" +
+"				}," +
+"				m: DropDownList {" +
+"					alignment: 'left'," +
+"					preferredSize: [180, 20]" +
+"				}" +
+"			}," +
+"			um: Panel {" +
+"				orientation: 'row'," +
+"				alignChildren: 'right'," +
+"				borderStyle: 'sunken'," +
+"				text: 'Кастомизация'," +
+"				po: Group {" +
+"					orientation: 'column'," +
+"					alignment: 'top'," +
+"					alignChildren: 'left'," +
+"					s: StaticText {" +
+"						text: 'Количество колонок'," +
+"					}," +
+"					c: EditText {" +
+"						name: 'cols'," +
+"						text: '"+cols+"'," +
+"						preferredSize: [50, 20]," +
+"					}," +
+"					s: StaticText {" +
+"						text: 'Отступы блоков'," +
+"					}," +
+"					o: EditText {" +
+"						name: 'offset'," +
+"						text: '"+offset+"'," +
+"						preferredSize: [50, 20]," +
+"					}," +
+"				}," +
+"				pp: Group {" +
+"					orientation: 'column'," +
+"					alignment: 'top'," +
+"					alignChildren: 'left'," +
+"					s: StaticText {" +
+"						text: 'Ширина шаблона'," +
+"					}," +
+"					w: EditText {" +
+"						name: 'width'," +
+"						text: '"+wDoc+"'," +
+"						preferredSize: [50, 20]," +
+"					}" +
+"				}" +
+"			}," +
+"			btn: Group {" +
+"				orientation: 'row'," +
+"				alignment: 'right'," +
+"				ok: Button {" +
+"					text: 'Ok'," +
+"					properties: {" +
+"						name: 'ok'" +
+"					}" +
+"				}," +
+"				cancel: Button {" +
+"					text: 'Cancel'," +
+"					properties: {" +
+"						name: 'cancel'" +
+"					}" +
+"				}" +
+"			}" +
+"		}" +
+"	}" +
 "}",
 dlgBootstrap = new Window(resDlg, "Bootstrap Grid System"),
 listBox = dlgBootstrap.bstd.info.mg.m,
